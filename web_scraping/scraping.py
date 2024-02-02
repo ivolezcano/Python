@@ -20,3 +20,18 @@ for i in sin_duplicados:
     maquinas_final.append(nombre_maquinas)
     print(nombre_maquinas)
 
+maquina_noob = 'noob-1'
+existe_noob = False
+
+for a in maquinas_final:
+    if a == maquina_noob:
+        existe_noob = True
+        break
+
+color_verde = Fore.GREEN
+color_amarillo = Fore.YELLOW
+
+if existe_noob == True:
+    print('\n' + color_verde + 'No hay ninguna maquina nueva.' + '\n')
+else:
+    print('\n' + color_amarillo + 'Máquina Nueva !!' + '\n')
